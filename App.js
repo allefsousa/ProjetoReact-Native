@@ -28,7 +28,7 @@ export default class App extends Component {
   render() {
     return (
       <View>
-        <TextComponent myText = "Allef sousa React Native"></TextComponent>
+        <TextComponent myText = "React Native"></TextComponent>
         <CounterComponent></CounterComponent>
       </View>
     );
