@@ -7,7 +7,7 @@ import { Text,View } from 'react-native';
 
 export default class HomePage extends Component{
     constructor(){
-        super();
+        super();d
     }
 
     render(){

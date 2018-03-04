@@ -16,7 +16,8 @@ import {
 // declarando o elemnto da view que foi criado  na classe principal do app
 import TextComponent from './application/components/Text';
 import Counter from './application/components/Counter';
-import {StackNavigator} from 'react-navigation'
+import {StackNavigator} from 'react-navigation';
+import pagina from './application/components/MyPage';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -41,7 +42,9 @@ const instructions = Platform.select({
 
 const StackApp = StackNavigator({
   Home:{screen:App},
-  Counter: {screen:Counter}
+  Counter: {screen:Counter},
+  pagina:{screen:pagina}
+
 });
 export default StackApp
 
