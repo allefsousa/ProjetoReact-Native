@@ -12,6 +12,10 @@ import {
   View
 } from 'react-native';
 
+// declarando o elemnto da view que foi criado  na classe principal do app
+import TextComponent from './application/components/Text';
+
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -24,6 +28,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+          <TextComponent myText = "Allef sousa React Native"></TextComponent>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
