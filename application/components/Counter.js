@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Text, Button, View, Alert, StyleSheet } from 'react-native';
+import STYLE from './Counter.style'
 /**
  * criando uma variavel para ser contadora
  * com state
  */
 export default class CounterComponent extends Component{
+    static navigationOptions = {
+         title:'counter - App'
+    }
     constructor(){
         super();
         this.state={
@@ -42,12 +46,15 @@ export default class CounterComponent extends Component{
         );
     }
 }
-/** Crinado uma folha de stylo para ser aplicada no componentes */
+/** Crinado uma constante folha de stylo para ser aplicada no componentes
+ * Comentado para deixar o codigo aqui e utilizar o stylo do arquivo Counter.style.js
+ 
 const STYLE = StyleSheet.create({
    
-    textCounter:{
+    textCounter:{ 
             fontSize:20,
             textAlign: 'center',
             margin:50
     }
 });
+*/
